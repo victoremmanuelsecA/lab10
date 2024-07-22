@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vicks Nightclub</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="club.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="club.js" defer></script>
+</head>
+<body>
+
+  <header class="bg-dark text-light text-center py-5">
+    <div class="container">
+      <h1 class="display-3">Vicks Nightclub</h1>
+      <p class="lead">The Ultimate Party Experience</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Vicks Nightclub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero bg-light text-dark py-5 text-center">
+    <div class="container">
+      <h2 class="display-4">Dance the Night Away</h2>
+      <p class="lead">Join us for unforgettable nights with live music and dancing.</p>
+    </div>
+  </section>
+
+  <section id="countdown" class="countdown text-center py-5">
+    <div class="container">
+      <h2 class="display-4">Next Big Event</h2>
+      <div id="countdown-timer">
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="events py-5">
+    <div class="container">
+      <h2 class="text-center">Upcoming Events</h2>
+      <div class="row">
+      
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="dj.jpeg" class="card-img-top" alt="Event 1">
+            <div class="card-body">
+              <h5 class="card-title">DJ Night</h5>
+              <p class="card-text">Join us for an unforgettable DJ night with top hits and non-stop dancing.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery py-5 bg-dark text-light">
+    <div class="container">
+      <h2 class="text-center">Gallery</h2>
+      <div class="row">
+        
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="flap.jpeg" class="card-img-top" alt="Gallery 1">
+          </div>
+        </div>
+        
+      </div>
+      <div class="text-center mt-4">
+        <button id="prevSlide" class="btn btn-secondary">Previous</button>
+        <button id="nextSlide" class="btn btn-secondary">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-light text-center py-3">
+    <p>&copy; 2024 Vicks Nightclub | Follow us on all<a href="#" class="text-light">Social Media platforms</a></p>
+  </footer>
+
+</body>
+</html>
